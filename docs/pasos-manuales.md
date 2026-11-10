@@ -12,7 +12,7 @@ Claude no puede crear cuentas, aceptar condiciones ni pagar en tu nombre. Hazlos
 ## 2. Tienda Shopify (días 2-4)
 
 - [ ] Registrarte en Shopify con la oferta de prueba y elegir el nombre de la tienda.
-- [ ] Sustituir `TU MARCA` en `tienda/productos.csv` por el nombre de tu tienda.
+- [ ] Comprobar que el nombre Michicaza está libre como marca (OEPM: https://consultas2.oepm.es/LocalizadorWeb/ y EUIPO: https://euipo.europa.eu/eSearch/) y registrar el dominio y los usuarios @michicaza en TikTok e Instagram.
 - [ ] Productos > Importar > subir `tienda/productos.csv`. El producto entra como borrador.
 - [ ] Subir 4-6 fotos del producto (de la muestra o del proveedor, con permiso) y la foto de la pluma.
 - [ ] Revisar que la ficha coincide con el producto real: duración del modo automático, carga USB, lo que incluye la caja. Corregir cualquier dato que no coincida.

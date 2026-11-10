@@ -1,6 +1,6 @@
-# Tienda de dropshipping: láser automático para gatos
+# Michicaza: tienda de dropshipping del láser automático para gatos
 
-Todo lo necesario para lanzar una tienda Shopify en España con 100 € de presupuesto, vendiendo con vídeos en TikTok e Instagram sin anuncios de pago al principio. El plan completo y el porqué de cada decisión están en el roadmap (documento de Claude).
+**Michicaza** despierta al cazador que tu gato lleva dentro. Este repositorio tiene todo lo necesario para lanzar la tienda Shopify en España con 100 € de presupuesto, vendiendo con vídeos en TikTok e Instagram sin anuncios de pago al principio. El plan completo y el porqué de cada decisión están en el roadmap (documento de Claude).
 
 **Empieza por [`docs/pasos-manuales.md`](docs/pasos-manuales.md):** es la lista ordenada de lo que tienes que hacer tú (cuentas, muestra, pagos).
 

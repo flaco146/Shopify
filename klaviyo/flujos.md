@@ -2,7 +2,7 @@
 
 Configúralos en Klaviyo > Flows > Create flow, usando la plantilla de cada flujo y sustituyendo los textos por estos. Klaviyo es gratis hasta 250 contactos.
 
-Variables entre llaves dobles: Klaviyo las rellena solo. `[MARCA]`: el nombre de tu tienda.
+Variables entre llaves dobles: Klaviyo las rellena solo.
 
 ---
 
@@ -68,7 +68,7 @@ Disparador: *Added to Cart*. Filtro: no ha empezado el checkout ni ha hecho pedi
 
 Disparador: se suscribe a la lista (formulario de la tienda).
 
-- **Asunto:** Bienvenido a [MARCA]
+- **Asunto:** Bienvenido a Michicaza
 - **Preheader:** Consejos para que tu gato no se aburra.
 
 > Gracias por apuntarte. Te escribiremos poco y solo con cosas útiles para tu gato.
