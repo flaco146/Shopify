@@ -1,0 +1,12 @@
+{
+  "name": "tienda-laser-gatos",
+  "private": true,
+  "type": "module",
+  "description": "Tienda de dropshipping en Shopify: catálogo, tema, emails, guiones y montaje de vídeos.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "video": "node video/render.mjs",
+    "video:todos": "node video/render.mjs --todos",
+    "video:prompts": "node video/render.mjs --prompts"
+  }
+}
