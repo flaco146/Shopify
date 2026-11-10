@@ -41,6 +41,10 @@ Si falta el clip de una escena, el vídeo se monta igual con un fondo provisiona
 
 Al publicar, activa siempre la etiqueta de contenido generado con IA en TikTok e Instagram.
 
+### Estado de los vídeos
+
+`video/clips/` tiene imágenes generadas con IA (Figma, modelo Gemini) para cada escena, y `video/salida/` los vídeos ya montados con su texto. El láser que aparece en las imágenes lo ha imaginado la IA: cuando tengas el producto real de CJ, sustituye las escenas donde el láser sale en primer plano (por ejemplo `demo-03/1`, `demo-03/2`, `dolor-03/2`) por fotos del proveedor o de la muestra y vuelve a ejecutar el render.
+
 ## Antes de vender
 
 - Comprueba que la ficha, la sección y los guiones coinciden con el producto real: duración del modo automático, carga, lo que incluye la caja.

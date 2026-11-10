@@ -1,9 +1,6 @@
 node_modules/
 .env
 video/cache/
-video/salida/
-video/clips/*
-!video/clips/.gitkeep
 video/musica/*
 !video/musica/.gitkeep
 .DS_Store
