@@ -43,7 +43,7 @@ Al publicar, activa siempre la etiqueta de contenido generado con IA en TikTok e
 
 ### Estado de los vídeos
 
-`video/clips/` tiene imágenes generadas con IA (Figma, modelo Gemini) para cada escena, y `video/salida/` los vídeos ya montados con su texto. El láser que aparece en las imágenes lo ha imaginado la IA: cuando tengas el producto real de CJ, sustituye las escenas donde el láser sale en primer plano (por ejemplo `demo-03/1`, `demo-03/2`, `dolor-03/2`) por fotos del proveedor o de la muestra y vuelve a ejecutar el render.
+`video/clips/` tiene imágenes generadas con IA (Figma, modelo Gemini) para las 45 escenas, y `video/salida/` los 15 vídeos ya montados con su texto y hashtags. El vídeo `regalo-01` dice "Envío en 2-7 días": cámbialo en `contenido/guiones.json` si el plazo real de CJ es otro. El láser que aparece en las imágenes lo ha imaginado la IA: cuando tengas el producto real de CJ, sustituye las escenas donde el láser sale en primer plano (por ejemplo `demo-03/1`, `demo-03/2`, `dolor-03/2`) por fotos del proveedor o de la muestra y vuelve a ejecutar el render.
 
 ## Antes de vender
 
