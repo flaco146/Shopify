@@ -1,0 +1,166 @@
+{% comment %}
+  Sección de página de producto para el láser automático.
+  Se añade debajo de "Información del producto" en la plantilla de producto (Personalizar > Producto > Añadir sección).
+  Todos los textos se editan desde el editor del tema.
+{% endcomment %}
+
+{%- style -%}
+  .ll-{{ section.id }} { padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px; }
+  .ll-{{ section.id }} .ll-wrap { max-width: 960px; margin: 0 auto; padding: 0 1.6rem; }
+  .ll-{{ section.id }} .ll-title { text-align: center; margin: 0 0 0.8rem; }
+  .ll-{{ section.id }} .ll-lead { text-align: center; max-width: 640px; margin: 0 auto 3.2rem; opacity: 0.85; }
+  .ll-{{ section.id }} .ll-grid { display: grid; gap: 1.6rem; grid-template-columns: 1fr; margin-bottom: 4rem; }
+  @media screen and (min-width: 750px) { .ll-{{ section.id }} .ll-grid { grid-template-columns: repeat(3, 1fr); } }
+  .ll-{{ section.id }} .ll-card { border: 1px solid rgba(var(--color-foreground), 0.12); border-radius: 12px; padding: 2rem; }
+  .ll-{{ section.id }} .ll-card h3 { margin: 0 0 0.6rem; font-size: 1.8rem; }
+  .ll-{{ section.id }} .ll-card p { margin: 0; }
+  .ll-{{ section.id }} .ll-step { font-weight: 700; font-size: 1.4rem; letter-spacing: 0.08em; opacity: 0.6; margin-bottom: 0.6rem; }
+  .ll-{{ section.id }} .ll-gift { display: flex; gap: 1.6rem; align-items: center; background: rgba(var(--color-foreground), 0.04); border-radius: 12px; padding: 2rem; margin-bottom: 4rem; }
+  .ll-{{ section.id }} .ll-gift img { width: 96px; height: 96px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+  .ll-{{ section.id }} .ll-faq details { border-bottom: 1px solid rgba(var(--color-foreground), 0.12); padding: 1.4rem 0; }
+  .ll-{{ section.id }} .ll-faq summary { cursor: pointer; font-weight: 600; list-style: none; }
+  .ll-{{ section.id }} .ll-faq summary::-webkit-details-marker { display: none; }
+  .ll-{{ section.id }} .ll-faq summary::after { content: '+'; float: right; }
+  .ll-{{ section.id }} .ll-faq details[open] summary::after { content: '−'; }
+  .ll-{{ section.id }} .ll-faq .ll-answer { margin-top: 0.8rem; }
+  .ll-{{ section.id }} .ll-guarantee { text-align: center; margin-top: 4rem; padding: 2rem; border: 1px dashed rgba(var(--color-foreground), 0.3); border-radius: 12px; }
+  .ll-{{ section.id }} .ll-warning { font-size: 1.3rem; opacity: 0.7; text-align: center; margin-top: 2rem; }
+{%- endstyle -%}
+
+<div class="ll-{{ section.id }} color-{{ section.settings.color_scheme }} gradient">
+  <div class="ll-wrap">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="ll-title h1">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    {%- if section.settings.lead != blank -%}
+      <div class="ll-lead">{{ section.settings.lead }}</div>
+    {%- endif -%}
+
+    {%- assign beneficios = section.blocks | where: 'type', 'beneficio' -%}
+    {%- if beneficios.size > 0 -%}
+      <div class="ll-grid">
+        {%- for block in beneficios -%}
+          <div class="ll-card" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title | escape }}</h3>
+            <p>{{ block.settings.text | escape }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- assign pasos = section.blocks | where: 'type', 'paso' -%}
+    {%- if pasos.size > 0 -%}
+      {%- if section.settings.steps_heading != blank -%}
+        <h2 class="ll-title h2">{{ section.settings.steps_heading | escape }}</h2>
+      {%- endif -%}
+      <div class="ll-grid">
+        {%- for block in pasos -%}
+          <div class="ll-card" {{ block.shopify_attributes }}>
+            <div class="ll-step">PASO {{ forloop.index }}</div>
+            <h3>{{ block.settings.title | escape }}</h3>
+            <p>{{ block.settings.text | escape }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.gift_text != blank -%}
+      <div class="ll-gift">
+        {%- if section.settings.gift_image != blank -%}
+          {{ section.settings.gift_image | image_url: width: 192 | image_tag: loading: 'lazy', alt: section.settings.gift_title }}
+        {%- endif -%}
+        <div>
+          <h3>{{ section.settings.gift_title | escape }}</h3>
+          <p>{{ section.settings.gift_text | escape }}</p>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- assign preguntas = section.blocks | where: 'type', 'pregunta' -%}
+    {%- if preguntas.size > 0 -%}
+      <div class="ll-faq">
+        {%- if section.settings.faq_heading != blank -%}
+          <h2 class="ll-title h2">{{ section.settings.faq_heading | escape }}</h2>
+        {%- endif -%}
+        {%- for block in preguntas -%}
+          <details {{ block.shopify_attributes }}>
+            <summary>{{ block.settings.question | escape }}</summary>
+            <div class="ll-answer rte">{{ block.settings.answer }}</div>
+          </details>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.guarantee != blank -%}
+      <div class="ll-guarantee">{{ section.settings.guarantee }}</div>
+    {%- endif -%}
+    {%- if section.settings.warning != blank -%}
+      <p class="ll-warning">{{ section.settings.warning | escape }}</p>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Landing láser",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Esquema de color", "default": "scheme-1" },
+    { "type": "text", "id": "heading", "label": "Título", "default": "15 minutos de caza, aunque no estés en casa" },
+    { "type": "richtext", "id": "lead", "label": "Entradilla", "default": "<p>Los gatos de interior necesitan cazar. Si no lo hacen, se aburren, rompen cosas o te despiertan de madrugada. Este láser se mueve solo y le da a tu gato su sesión de caza diaria.</p>" },
+    { "type": "text", "id": "steps_heading", "label": "Título de los pasos", "default": "Cómo funciona" },
+    { "type": "text", "id": "gift_title", "label": "Título del regalo", "default": "Pluma de regalo incluida" },
+    { "type": "text", "id": "gift_text", "label": "Texto del regalo", "default": "Para que tu gato termine cada sesión atrapando algo de verdad y no se quede con la caza a medias." },
+    { "type": "image_picker", "id": "gift_image", "label": "Imagen del regalo" },
+    { "type": "text", "id": "faq_heading", "label": "Título de preguntas frecuentes", "default": "Preguntas frecuentes" },
+    { "type": "richtext", "id": "guarantee", "label": "Garantía", "default": "<p><strong>14 días para devolverlo.</strong> Si a tu gato no le convence, nos lo devuelves y te reembolsamos el importe.</p>" },
+    { "type": "text", "id": "warning", "label": "Aviso de seguridad", "default": "No apuntes nunca el láser a los ojos de personas ni animales. Supervisa las primeras sesiones." },
+    { "type": "range", "id": "padding_top", "label": "Margen superior", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "padding_bottom", "label": "Margen inferior", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 48 }
+  ],
+  "blocks": [
+    {
+      "type": "beneficio",
+      "name": "Beneficio",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Título", "default": "Juega solo" },
+        { "type": "textarea", "id": "text", "label": "Texto", "default": "El punto rojo se mueve en patrones aleatorios por el suelo." }
+      ]
+    },
+    {
+      "type": "paso",
+      "name": "Paso",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Título", "default": "Cárgalo" },
+        { "type": "textarea", "id": "text", "label": "Texto", "default": "Con el cable USB incluido." }
+      ]
+    },
+    {
+      "type": "pregunta",
+      "name": "Pregunta",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Pregunta", "default": "¿Se apaga solo?" },
+        { "type": "richtext", "id": "answer", "label": "Respuesta", "default": "<p>Sí. En modo automático juega 15 minutos y se apaga.</p>" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Landing láser",
+      "blocks": [
+        { "type": "beneficio", "settings": { "title": "Juega solo", "text": "El punto rojo se mueve en patrones aleatorios por el suelo, sin que tengas que estar tú." } },
+        { "type": "beneficio", "settings": { "title": "Se apaga solo", "text": "Sesiones de 15 minutos con apagado automático. Lo enciendes antes de salir y listo." } },
+        { "type": "beneficio", "settings": { "title": "Sin pilas", "text": "Se carga por USB con el cable incluido." } },
+        { "type": "paso", "settings": { "title": "Cárgalo", "text": "Con el cable USB incluido." } },
+        { "type": "paso", "settings": { "title": "Ponlo en el suelo", "text": "En una zona despejada, lejos de escaleras." } },
+        { "type": "paso", "settings": { "title": "Pulsa el botón", "text": "Elige modo automático y deja que tu gato cace. Al final, sácale la pluma." } },
+        { "type": "pregunta", "settings": { "question": "¿Se apaga solo?", "answer": "<p>Sí. En modo automático juega 15 minutos y se apaga.</p>" } },
+        { "type": "pregunta", "settings": { "question": "¿Es seguro para mi gato?", "answer": "<p>Proyecta el punto hacia el suelo. Aun así, no lo apuntes nunca a los ojos y supervisa las primeras sesiones.</p>" } },
+        { "type": "pregunta", "settings": { "question": "¿Cuánto tarda en llegar?", "answer": "<p>Enviamos desde un almacén en Europa. El plazo estimado se muestra al finalizar la compra.</p>" } },
+        { "type": "pregunta", "settings": { "question": "¿Y si a mi gato no le gusta?", "answer": "<p>Tienes 14 días desde que lo recibes para devolverlo y te reembolsamos el importe.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,441 @@
+{
+  "producto": "Láser automático para gatos + pluma de regalo",
+  "nota": "Cada escena tiene la frase de voz en off (voz), el texto grande en pantalla (pantalla, opcional) y el prompt para generar el clip con IA (clip_ia, en inglés porque los modelos de vídeo responden mejor). El clip de cada escena se busca en video/clips/<id>/<n>.mp4|mov|jpg|png; si no existe, el render usa un fondo provisional.",
+  "guiones": [
+    {
+      "id": "demo-01",
+      "angulo": "Demostración",
+      "escenas": [
+        {
+          "pantalla": "Lo que hace tu gato cuando no estás",
+          "voz": "Esto es lo que hace mi gato cuando me voy a trabajar.",
+          "clip_ia": "Vertical 9:16 handheld phone video, cozy Spanish apartment living room in the morning, a small white round automatic laser toy on the wooden floor projects a moving red dot, a grey tabby cat crouches and pounces on the dot, natural window light, realistic, no text"
+        },
+        {
+          "voz": "El láser se mueve solo durante quince minutos y luego se apaga.",
+          "clip_ia": "Vertical 9:16 close-up of a small white round automatic laser toy on a wooden floor, a red laser dot moving in random patterns across the floor and a rug, a cat paw enters the frame trying to catch it, shallow depth of field, realistic"
+        },
+        {
+          "pantalla": "Enlace en la bio",
+          "voz": "Y la pluma de regalo es para que al final pueda cazar algo de verdad.",
+          "clip_ia": "Vertical 9:16 a grey tabby cat happily catching and biting a colorful feather toy on a sofa, warm afternoon light, satisfied cat, realistic phone footage"
+        }
+      ],
+      "caption": "Mi gato ya no se aburre cuando no estoy 🐱 Láser automático + pluma de regalo. Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#gatosdetiktok",
+        "#michis",
+        "#juguetesparagatos",
+        "#gatoaburrido",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "demo-02",
+      "angulo": "Demostración",
+      "escenas": [
+        {
+          "pantalla": "Le puse esto a mi gato…",
+          "voz": "Le puse esto en el suelo a mi gato y mira.",
+          "clip_ia": "Vertical 9:16 a hand placing a small white round automatic laser toy on a living room floor and pressing its button, a cat watching curiously in the background, realistic phone video"
+        },
+        {
+          "voz": "Tres segundos después ya estaba corriendo detrás del punto rojo.",
+          "clip_ia": "Vertical 9:16 an orange cat running and sliding across a wooden floor chasing a red laser dot, playful energy, slow motion moment, realistic"
+        },
+        {
+          "pantalla": "Tiene modo automático 15 min",
+          "voz": "Tiene modo automático, así que no tienes que estar tú con el puntero.",
+          "clip_ia": "Vertical 9:16 a person relaxing on a sofa with a coffee while an orange cat plays alone with a moving red laser dot on the floor, cozy home, realistic"
+        }
+      ],
+      "caption": "3 segundos. Eso tardó 😂 Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#gatosgraciosos",
+        "#michi",
+        "#juguetesparagatos",
+        "#parati",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "demo-03",
+      "angulo": "Demostración",
+      "escenas": [
+        {
+          "pantalla": "Cómo funciona en 15 segundos",
+          "voz": "Cómo funciona en quince segundos.",
+          "clip_ia": "Vertical 9:16 product shot of a small white round automatic laser toy on a light wooden table, soft studio light, clean minimal background, realistic"
+        },
+        {
+          "voz": "Lo cargas por USB, pulsas el botón y el láser se mueve solo por el suelo.",
+          "clip_ia": "Vertical 9:16 close-up of a USB cable charging a small white round laser toy, then a finger pressing its top button, realistic product video"
+        },
+        {
+          "pantalla": "Láser + pluma de regalo",
+          "voz": "Viene con una pluma de regalo para que tu gato termine el juego cazando.",
+          "clip_ia": "Vertical 9:16 flat lay of a small white round laser toy next to a colorful feather wand toy on a wooden floor, cat paw touching the feather, realistic"
+        }
+      ],
+      "caption": "Lo cargas, pulsas y listo. Láser + pluma de regalo 🎁 Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#michis",
+        "#juguetesparagatos",
+        "#accesoriosparagatos",
+        "#gatosdetiktok",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "dolor-01",
+      "angulo": "Dolor: gato aburrido que destroza la casa",
+      "escenas": [
+        {
+          "pantalla": "Si tu gato destroza el sofá…",
+          "voz": "Si tu gato te destroza el sofá cuando te vas, probablemente no es maldad.",
+          "clip_ia": "Vertical 9:16 a cat scratching the side of a grey fabric sofa in an empty apartment, slightly guilty look, realistic phone footage"
+        },
+        {
+          "voz": "Es aburrimiento. Los gatos de interior necesitan cazar y gastar energía.",
+          "clip_ia": "Vertical 9:16 a bored cat lying on a windowsill looking outside, then turning its head, quiet empty apartment, soft light, realistic"
+        },
+        {
+          "pantalla": "15 min de caza al día",
+          "voz": "Con esto tiene quince minutos de caza aunque tú no estés en casa.",
+          "clip_ia": "Vertical 9:16 the same cat energetically chasing a moving red laser dot projected by a small white round toy on the floor, realistic"
+        }
+      ],
+      "caption": "No es maldad, es aburrimiento 🛋️ Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#gatoaburrido",
+        "#consejosgatos",
+        "#michis",
+        "#gatosdeinterior",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "dolor-02",
+      "angulo": "Dolor: te despierta de madrugada",
+      "escenas": [
+        {
+          "pantalla": "¿Tu gato te despierta a las 5?",
+          "voz": "¿Tu gato te despierta a las cinco de la mañana?",
+          "clip_ia": "Vertical 9:16 dark bedroom at dawn, a cat sitting on a sleeping person's chest and tapping their face with its paw, blue early light, realistic, humorous"
+        },
+        {
+          "voz": "Muchas veces es porque llega a la noche con toda la energía sin gastar.",
+          "clip_ia": "Vertical 9:16 a cat running zoomies down a hallway at night, motion blur, dim lamp light, realistic"
+        },
+        {
+          "pantalla": "Una sesión antes de dormir",
+          "voz": "Yo le pongo una sesión de láser antes de dormir y por fin duermo del tirón.",
+          "clip_ia": "Vertical 9:16 evening living room with warm lamp light, a cat chasing a red laser dot from a small white round toy, then the cat curled up asleep on a blanket, realistic"
+        }
+      ],
+      "caption": "Desde que hacemos esto, duermo del tirón 😴 Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#michis",
+        "#gatosdetiktok",
+        "#vidaconungato",
+        "#consejosgatos",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "dolor-03",
+      "angulo": "Dolor: culpa por dejarlo solo",
+      "escenas": [
+        {
+          "pantalla": "Trabajo 9 horas fuera de casa",
+          "voz": "Trabajo nueve horas fuera de casa y me sentía fatal dejando a mi gato solo.",
+          "clip_ia": "Vertical 9:16 a person putting on a coat at the front door while a cat watches from the floor, morning light, realistic emotional moment"
+        },
+        {
+          "voz": "Ahora antes de salir le dejo esto encendido.",
+          "clip_ia": "Vertical 9:16 hand pressing the button of a small white round automatic laser toy on a wooden floor, red dot starts moving, realistic"
+        },
+        {
+          "pantalla": "Se apaga solo",
+          "voz": "Juega un rato, se apaga solo y cuando vuelvo está tranquilo.",
+          "clip_ia": "Vertical 9:16 a calm cat stretching and greeting its owner at the door in the evening, realistic heartwarming phone footage"
+        }
+      ],
+      "caption": "Para los que trabajáis fuera todo el día 🧡 Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#michis",
+        "#gatosdeinterior",
+        "#teletrabajo",
+        "#gatosdetiktok",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "comparacion-01",
+      "angulo": "Comparación",
+      "escenas": [
+        {
+          "pantalla": "Puntero de 3 € vs láser automático",
+          "voz": "Puntero láser de tres euros contra láser automático.",
+          "clip_ia": "Vertical 9:16 split screen: left side a hand holding a cheap pen laser pointer, right side a small white round automatic laser toy on the floor, realistic product comparison"
+        },
+        {
+          "voz": "Con el puntero tienes que estar tú, y el gato acaba frustrado porque nunca atrapa nada.",
+          "clip_ia": "Vertical 9:16 a tired person on a sofa holding a laser pointer while a cat looks confused at an empty spot on the floor, realistic, humorous"
+        },
+        {
+          "pantalla": "Juega solo + caza la pluma",
+          "voz": "Con el automático juega solo, y la pluma de regalo le da algo que cazar al final.",
+          "clip_ia": "Vertical 9:16 a cat chasing a red dot from a white round laser toy, then pouncing on a feather toy, realistic"
+        }
+      ],
+      "caption": "No hay color 👀 Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#juguetesparagatos",
+        "#michis",
+        "#gatosdetiktok",
+        "#comparativa",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "comparacion-02",
+      "angulo": "Comparación",
+      "escenas": [
+        {
+          "pantalla": "Caja de cartón vs esto",
+          "voz": "Caja de cartón contra esto. Vamos a ver qué elige.",
+          "clip_ia": "Vertical 9:16 a cardboard box on the left and a small white round laser toy on the right on a living room floor, a cat walking between them, realistic"
+        },
+        {
+          "voz": "Vale, la caja sigue siendo la caja.",
+          "clip_ia": "Vertical 9:16 a cat sitting inside a cardboard box looking smug, realistic, humorous"
+        },
+        {
+          "pantalla": "Pero cuando se enciende…",
+          "voz": "Pero cuando se enciende el láser, sale disparado.",
+          "clip_ia": "Vertical 9:16 a cat leaping out of a cardboard box to chase a moving red laser dot on the floor, realistic slow motion"
+        }
+      ],
+      "caption": "La caja nunca pierde… casi nunca 📦😂 Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#gatosgraciosos",
+        "#michis",
+        "#humorgatos",
+        "#parati",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "comparacion-03",
+      "angulo": "Comparación",
+      "escenas": [
+        {
+          "pantalla": "Juguetes que mi gato ignoró",
+          "voz": "Todos estos juguetes los compré y mi gato los ignoró.",
+          "clip_ia": "Vertical 9:16 a pile of colorful cat toys, mice, balls and bells, abandoned in a corner, a cat walking past without interest, realistic"
+        },
+        {
+          "voz": "El único que sigue usando cada día es este, porque se mueve como una presa.",
+          "clip_ia": "Vertical 9:16 a cat tracking a moving red laser dot with intense focus, pupils dilated, then pouncing, realistic close-up"
+        },
+        {
+          "pantalla": "Láser + pluma",
+          "voz": "Y la pluma para rematar. Te lo dejo en la bio.",
+          "clip_ia": "Vertical 9:16 a cat catching a feather toy and holding it proudly, realistic phone video"
+        }
+      ],
+      "caption": "Ahorraos los otros 10 juguetes 😅 Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#juguetesparagatos",
+        "#michis",
+        "#gatosdetiktok",
+        "#recomendaciones",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "regalo-01",
+      "angulo": "Regalo de Navidad",
+      "escenas": [
+        {
+          "pantalla": "El regalo de Navidad para tu gato",
+          "voz": "El regalo de Navidad para tu gato que no va a acabar debajo del sofá.",
+          "clip_ia": "Vertical 9:16 a cat next to a small Christmas tree with lights, a wrapped gift box on the floor, cozy festive living room, realistic"
+        },
+        {
+          "voz": "Se mueve solo, tiene modo de quince minutos y viene con una pluma.",
+          "clip_ia": "Vertical 9:16 a cat chasing a red laser dot around a Christmas tree, festive lights bokeh, realistic"
+        },
+        {
+          "pantalla": "Envío en 2-7 días",
+          "voz": "Pídelo ahora y llega antes de Navidad.",
+          "clip_ia": "Vertical 9:16 hands unwrapping a gift revealing a small white round laser toy and a feather wand, a cat sniffing the gift, Christmas setting, realistic"
+        }
+      ],
+      "caption": "Este año tu gato también tiene regalo 🎄 Enlace en la bio.",
+      "hashtags": [
+        "#gatos",
+        "#regalosnavidad",
+        "#navidad",
+        "#michis",
+        "#regalosparagatos",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "regalo-02",
+      "angulo": "Regalo para quien tiene gato",
+      "escenas": [
+        {
+          "pantalla": "¿Amigo invisible con gato?",
+          "voz": "Si te toca en el amigo invisible alguien que tiene gato, esto.",
+          "clip_ia": "Vertical 9:16 office secret santa scene, a person receiving a small gift bag and smiling, festive decorations, realistic"
+        },
+        {
+          "voz": "Cuesta menos de treinta euros y lo va a usar todos los días.",
+          "clip_ia": "Vertical 9:16 a cat at home playing with a moving red laser dot from a white round toy, warm evening light, realistic"
+        },
+        {
+          "pantalla": "Láser + pluma de regalo",
+          "voz": "Y quedas como alguien que de verdad pensó el regalo.",
+          "clip_ia": "Vertical 9:16 a happy person filming their cat playing with a feather toy on their phone, cozy home, realistic"
+        }
+      ],
+      "caption": "Amigo invisible resuelto 🎁 Enlace en la bio.",
+      "hashtags": [
+        "#amigoinvisible",
+        "#regalosnavidad",
+        "#gatos",
+        "#ideasderegalo",
+        "#michis",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "regalo-03",
+      "angulo": "Unboxing",
+      "escenas": [
+        {
+          "pantalla": "Unboxing para mi gato",
+          "voz": "Abrimos el regalo de mi gato.",
+          "clip_ia": "Vertical 9:16 top-down view of hands opening a small shipping box on a wooden floor, a curious cat sticking its head in, realistic unboxing"
+        },
+        {
+          "voz": "Láser automático, cable de carga y una pluma de regalo.",
+          "clip_ia": "Vertical 9:16 top-down flat lay of a small white round laser toy, a USB cable and a colorful feather wand on a wooden floor, cat paw entering frame, realistic"
+        },
+        {
+          "pantalla": "Su cara 😂",
+          "voz": "Y esta fue su reacción.",
+          "clip_ia": "Vertical 9:16 a cat with wide eyes staring at a red laser dot and then pouncing, comedic timing, realistic"
+        }
+      ],
+      "caption": "Su cara lo dice todo 😂 Enlace en la bio.",
+      "hashtags": [
+        "#unboxing",
+        "#gatos",
+        "#michis",
+        "#gatosgraciosos",
+        "#parati",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "educativo-01",
+      "angulo": "Educativo",
+      "escenas": [
+        {
+          "pantalla": "Por qué el láser solo NO basta",
+          "voz": "Un error que casi todos cometemos jugando con el láser.",
+          "clip_ia": "Vertical 9:16 a cat chasing a red laser dot that suddenly disappears, the cat looks around confused, realistic"
+        },
+        {
+          "voz": "Si el gato nunca atrapa nada, se queda con la caza a medias.",
+          "clip_ia": "Vertical 9:16 close-up of a cat's face looking frustrated and searching the floor, realistic"
+        },
+        {
+          "pantalla": "Termina siempre con algo que atrapar",
+          "voz": "Por eso termina siempre el juego con algo que pueda atrapar, como una pluma.",
+          "clip_ia": "Vertical 9:16 a cat pouncing on and catching a colorful feather toy at the end of play, satisfied, realistic"
+        }
+      ],
+      "caption": "Un consejo que no sabía y cambió el juego 🪶 Enlace en la bio.",
+      "hashtags": [
+        "#consejosgatos",
+        "#gatos",
+        "#michis",
+        "#comportamientofelino",
+        "#aprendecontiktok",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "educativo-02",
+      "angulo": "Educativo",
+      "escenas": [
+        {
+          "pantalla": "3 señales de gato aburrido",
+          "voz": "Tres señales de que tu gato se aburre.",
+          "clip_ia": "Vertical 9:16 a cat lying flat and staring at a wall in an empty living room, realistic, slightly humorous"
+        },
+        {
+          "voz": "Te despierta de noche, rompe cosas o se pasa el día durmiendo y comiendo.",
+          "clip_ia": "Vertical 9:16 quick cuts feel: a cat knocking a glass off a table, then a cat sleeping next to its food bowl, realistic"
+        },
+        {
+          "pantalla": "Dale 15 min de caza",
+          "voz": "Quince minutos de caza al día ayudan mucho. Yo uso un láser automático.",
+          "clip_ia": "Vertical 9:16 a cat actively chasing a red laser dot from a small white round toy across a living room, realistic"
+        }
+      ],
+      "caption": "¿Cuál hace el tuyo? 👇 Enlace en la bio.",
+      "hashtags": [
+        "#consejosgatos",
+        "#gatos",
+        "#michis",
+        "#gatoaburrido",
+        "#gatosdetiktok",
+        "#michicaza"
+      ]
+    },
+    {
+      "id": "educativo-03",
+      "angulo": "Educativo",
+      "escenas": [
+        {
+          "pantalla": "Cómo usar un láser con tu gato",
+          "voz": "Cómo usar un láser con tu gato sin hacerlo mal.",
+          "clip_ia": "Vertical 9:16 a small white round automatic laser toy on a floor, red dot moving, a cat watching, realistic"
+        },
+        {
+          "voz": "Nunca apuntes a los ojos, sesiones cortas y siempre en el suelo.",
+          "clip_ia": "Vertical 9:16 a red laser dot moving only along the floor and a rug while a cat follows it, realistic close-up"
+        },
+        {
+          "pantalla": "Y al final, la pluma",
+          "voz": "Y al final, la pluma, para que termine cazando.",
+          "clip_ia": "Vertical 9:16 a person gently moving a feather wand toy and a cat catching it, cozy home, realistic"
+        }
+      ],
+      "caption": "Guárdalo para cuando juegues con tu michi 📌 Enlace en la bio.",
+      "hashtags": [
+        "#consejosgatos",
+        "#gatos",
+        "#michis",
+        "#juguetesparagatos",
+        "#tips",
+        "#michicaza"
+      ]
+    }
+  ]
+}
